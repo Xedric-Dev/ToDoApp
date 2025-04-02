@@ -43,7 +43,6 @@ public class TodoController {
             public void changed(ObservableValue<? extends String> observableValue, String oldValue, String newValue) {
                 filterTasksByStatus(newValue);
             }
-
          }
         );
 
