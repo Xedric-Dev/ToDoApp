@@ -1,0 +1,76 @@
+.title {
+
+    -fx-font-size : 20px;
+    -fx-font-weight : bold;
+
+}
+
+.task-card {
+
+    -fx-background-color : white;
+    -fx-padding : 10px;
+    -fx-border-radius : 10px;
+    -fx-background-radius : 10px;
+    -fx-effect : dropshadow(gaussian, rgba(0,0,0,0.1), 10,0.5,0,0);
+}
+
+.timestamp {
+
+    -fx-font-size : 11px;
+    -fx-text-fill : #a1a1a1;
+}
+
+MFXButton {
+
+    -fx-background-color : #26B7FF;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+MFXButton:hover {
+
+    -fx-background-color : #21A2E2;
+}
+
+
+.status-combo-box{
+
+    -fx-background-radius : 5px;
+    -fx-border-color : #26B7FF;
+    -fx-background-color : #CACDCE;
+    -fx-font-size : 12px;
+    -fx-alignment : top-center;
+
+}
+
+.status-combo-box .text-field{
+
+    -fx-translate-y : -7;
+    -fx-translate-x : 20;
+
+}
+
+.status-combo-box .caret .mfx-font-icon {
+
+    -mfx-color : #26B7FF;
+
+}
+
+.status-combo-box .combo-popup .virtual-flow .mfx-combo-box-cell {
+    -fx-alignment : center;
+}
+
+
+ScrollPane {
+
+    -fx-background-color : transparent;
+    -fx-border-color : transparent;
+}
+
+VBox {
+
+    -fx-background-color : transparent;
+    -fx-border-color : transparent;
+    -fx-padding : 0;
+}

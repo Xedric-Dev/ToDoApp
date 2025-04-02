@@ -1,0 +1,60 @@
+.submitButton {
+
+    -fx-background-color : #26B7FF;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+.submitButton:hover {
+
+    -fx-background-color : #21A2E2;
+}
+
+.cancelButton:hover {
+
+    -fx-background-color : #C05843;
+}
+
+.cancelButton {
+
+    -fx-background-color : #DF674F;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+.main-field {
+
+    -fx-font-size : 13px;
+    -fx-background-radius : 5px;
+    -fx-border-color : #26B7FF;
+
+}
+
+.main-field .floating-text{
+
+    -fx-font-size : 15px;
+    -fx-text-fill : #26B7FF;
+    -fx-font-weight : bold;
+}
+
+
+TextArea {
+
+    -fx-font-size : 13px;
+    -fx-border-color : #26B7FF;
+    -fx-background-radius : 5px;
+    -fx-border-radius : 5px;
+}
+
+.mainLabel {
+
+    -fx-font-size : 20px;
+    -fx-font-weight : bold;
+}
+
+.descriptionLabel {
+
+    -fx-font-size : 16px;
+}

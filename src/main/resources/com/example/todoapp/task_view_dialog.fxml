@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.todoapp.controller.TaskViewDialogController"
+            prefHeight="450.0" prefWidth="400">
+
+    <VBox AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20"  spacing="10">
+
+        <HBox alignment="CENTER"><Label text="View Task" styleClass="title-label"/></HBox>
+
+        <MFXTextField floatingText="Task Title" promptText="Enter task title" fx:id="taskTitleField" prefWidth="360" styleClass="main-field"/>
+
+        <MFXTextField fx:id="descriptionField" promptText="Task description..." floatingText="Description" prefWidth="360"  />
+
+        <HBox prefWidth="Infinity"><MFXComboBox fx:id="statusComboBox" promptText="All" prefWidth="360"  styleClass="status-combo-box"/></HBox>
+
+        <HBox alignment="CENTER"><Label text="Comments" styleClass="comment-label"/></HBox>
+
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <MFXTextField fx:id="commentField" HBox.hgrow="ALWAYS" prefWidth="320" styleClass="comment-field"/>
+            <MFXButton text="Add" prefWidth="50" prefHeight="40" onAction="#handleAddComment" styleClass="add-button"/>
+        </HBox>
+
+        <ScrollPane fitToWidth="true" fitToHeight="true" vbarPolicy="NEVER" hbarPolicy="NEVER">
+            <VBox fx:id="lastCommentLabel" prefHeight="75" spacing="5"/>
+        </ScrollPane>
+
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Pane HBox.hgrow="ALWAYS"/>
+            <MFXButton text="Cancel" prefWidth="80" prefHeight="40" onAction="#handleCancel" styleClass="cancel-button"/>
+            <MFXButton text="Delete" prefWidth="80" prefHeight="40" onAction="#handleDeleteTask" styleClass="delete-button"/>
+            <MFXButton text="Update" prefWidth="80" prefHeight="40" onAction="#handleUpdateTask" styleClass="update-button"/>
+        </HBox>
+
+    </VBox>
+</AnchorPane>

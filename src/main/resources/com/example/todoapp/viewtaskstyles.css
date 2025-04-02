@@ -1,0 +1,110 @@
+.cancel-button{
+
+    -fx-background-color : #9A9A9A;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+.delete-button{
+
+    -fx-background-color : #DF674F;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+.update-button{
+
+    -fx-background-color : #26B7FF;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 14px;
+}
+
+.add-button{
+
+    -fx-background-color : #26B7FF;
+    -fx-text-fill : #E1F6FF;
+    -fx-background-radius : 5px;
+    -fx-font-size : 12px;
+}
+
+.add-button:hover{
+
+    -fx-background-color : #21A2E2;
+}
+
+.update-button:hover {
+
+    -fx-background-color : #21A2E2;
+}
+
+.delete-button:hover {
+
+    -fx-background-color : #C05843;
+}
+.cancel-button:hover {
+
+    -fx-background-color : #848484;
+}
+
+MFXTextField {
+
+    -fx-font-size : 13px;
+    -fx-background-radius : 5px;
+    -fx-border-color : #26B7FF;
+}
+
+MFXTextField .floating-text{
+
+    -fx-text-fill : #26B7FF;
+    -fx-font-weight : bold;
+    -fx-font-size : 15px;
+}
+
+.comment-field .floating-text{
+
+    visibility : hidden;
+    -fx-pref-width : 0em;
+    -fx-pref-height : 0em;
+}
+
+.comment-label{
+
+    -fx-font-size : 17px;
+    -fx-font-weight : bold;
+}
+
+.status-combo-box{
+
+    -fx-background-radius : 5px;
+    -fx-border-color : #26B7FF;
+    -fx-background-color : #CACDCE;
+    -fx-font-size : 15px;
+    -fx-alignment : top-center;
+
+}
+
+.status-combo-box .text-field{
+
+    -fx-translate-y : -9;
+    -fx-translate-x : 20;
+
+}
+
+.status-combo-box .caret .mfx-font-icon {
+
+    -mfx-color : #26B7FF;
+
+}
+
+.status-combo-box .combo-popup .virtual-flow .mfx-combo-box-cell {
+    -fx-alignment : center;
+}
+
+.title-label{
+
+    -fx-font-size : 20px;
+    -fx-font-weight : bold;
+}
